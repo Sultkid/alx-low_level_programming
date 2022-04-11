@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 /**
  * main - Entry point
@@ -11,13 +13,13 @@ int main(void)
 
 	for (x = 48; x <= 57; x++)
 	{
+		putchar(x);
 		if (x == 57)
 		{
-			putchar(x);
+			break;
 		}
 		else
 		{
-			putchar(x);
 			putchar(',');
 			putchar(' ');
 		}
