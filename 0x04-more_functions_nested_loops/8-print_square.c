@@ -1,19 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_square - print
  * @size: member
  */
 
-int main (void)
+void print_square(int size)
 {
-	int size, i, k;
-	
-	size = 10;
+	int i, k;
 
 	if (size <= 0)
 	{
-		putchar('\n');
+		_putchar('\n');
 	}
 	else
 	{
@@ -21,9 +19,9 @@ int main (void)
 		{
 			for (k = 0; k < size; k++)
 			{
-				putchar(35);
+				_putchar(35);
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
