@@ -2,6 +2,7 @@
 
 /**
  * reset_to_98 - reset to 98
+ * @n: member
  */
 
 void reset_to_98(int *n)
