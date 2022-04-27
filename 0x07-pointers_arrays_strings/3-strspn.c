@@ -21,9 +21,9 @@ unsigned int _strspn(char *s, char *accept)
 			if ((s[count] == accept[i]) && s[count] != '\0')
 			{
 				num++;
+				break;
 			}
 		}
 	}
-	num -= 2;
 	return (num);
 }
