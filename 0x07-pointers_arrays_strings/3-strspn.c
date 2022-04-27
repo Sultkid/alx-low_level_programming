@@ -1,31 +1,38 @@
 #include "main.h"
 
 /**
- * _strspn - main
- * @s: member
- * @accept: member
- * Return: num
- */
+ *  * _strspn - Locates a character in a string
+ *   * @s: This is the main C string to be scanned.
+ * @accept: This is the string containing the list of characters to match in s
+ *     * Return: return count
+ *      **/
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int count, i;
+	int i, j;
+	int count = 0;
+	char *str1, *str2;
 
-	unsigned int num;
-
-	num = 0;
-	for (i = 0; i <= accept[i]; i++)
+	str1 = s;
+	str2 = accept;
+	i = 0;
+	while (str1[i] != '\0')
 	{
-		for (count = 0; count < s[count]; count++)
+		j = 0;
+		while (str2[j] != '\0') /*Declaring WHILE *accept*/
 		{
-			if ((s[count] == accept[i]) && s[count] != '\0')
+			if (str2[j] == str1[i]) /*Evaluate condition*/
 			{
-				num++;
+				count++; /*count number*/
 				break;
 			}
-			if (s[count] != accept[i])
-				break;
+			j++;
 		}
+		if (s[i] != accept[j])
+		{
+			break;
+		}
+		i++;
 	}
-	return (num);
+	return (count);
 }
