@@ -23,6 +23,8 @@ unsigned int _strspn(char *s, char *accept)
 				num++;
 				break;
 			}
+			if (s[count] != accept[i])
+				break;
 		}
 	}
 	return (num);
