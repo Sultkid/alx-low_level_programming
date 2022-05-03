@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int add, i, j;
 	char alp[] = "abcdefghijklmnopqrstuvwxyzABCDEFGJIJKLMNOPQRSTUVWXYZ";
-	
+
 	add = 0;
 	if (argc > 1)
 	{
