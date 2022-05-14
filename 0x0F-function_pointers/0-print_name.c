@@ -7,7 +7,6 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	void (*myFunc)(char *) = f;
-
-	myFunc(name);
+	if (f && name)
+		f(name);
 }
